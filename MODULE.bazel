@@ -6,7 +6,7 @@
 ###############################################################################
 
 module(
-    name = "private_join_and_compute",
+    name = "private_join_and_compute_gm",
     version = "0.0.1",
 )
 
@@ -16,7 +16,7 @@ bazel_dep(name = "glog", version = "0.7.1")
 bazel_dep(name = "gflags", version = "2.2.2")
 bazel_dep(name = "abseil-cpp", version = "20240722.0")
 bazel_dep(name = "googletest", version = "1.15.2")
-bazel_dep(name = "boringssl_gm", version = "0.20240913.0")
+bazel_dep(name = "boringssl", version = "0.20240913.0")
 bazel_dep(name = "rules_cc", version = "0.0.10")
 bazel_dep(name = "protobuf", version = "28.2")
 bazel_dep(name = "rules_proto_grpc", version = "5.0.0")
@@ -27,9 +27,9 @@ bazel_dep(name = "rules_python", version = "0.36.0")
 
 # 启用国密版
 git_override(
-    module_name = "boringssl_gm",
+    module_name = "boringssl",
     remote = "https://github.com/HunterChan-SR/BoringSSL-GM",
-    commit = "eefca2558ff7e8cba52a401cfc72f09c0daeefef",
+    commit = "fff65d707be7383e252a11f8e41a8641c3bc0671",
 )
 
 

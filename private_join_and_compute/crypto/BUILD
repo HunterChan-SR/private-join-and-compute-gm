@@ -22,7 +22,7 @@ cc_library(
     name = "openssl_includes",
     hdrs = ["openssl.inc"],
     deps = [
-        "@boringssl_gm//:ssl",
+        "@boringssl//:ssl",
     ],
 )
 
@@ -33,7 +33,7 @@ cc_library(
     deps = [
         ":openssl_includes",
         "@abseil-cpp//absl/log",
-        "@boringssl_gm//:ssl",
+        "@boringssl//:ssl",
     ],
 )
 

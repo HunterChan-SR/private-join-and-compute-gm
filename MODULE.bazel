@@ -6,7 +6,7 @@
 ###############################################################################
 
 module(
-    name = "private_join_and_compute_gm",
+    name = "private_join_and_compute",
     version = "0.0.1",
 )
 

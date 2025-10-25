@@ -42,7 +42,7 @@ namespace {
 using ::testing::HasSubstr;
 using testing::StatusIs;
 
-const int kTestCurveId = NID_X9_62_prime256v1;
+const int kTestCurveId = /*NID_X9_62_prime256v1*/NID_sm2p256v1;
 const int kSafePrimeLengthBits = 768;
 const int kChallengeLengthBits = 128;
 const int kSecurityParameter = 128;

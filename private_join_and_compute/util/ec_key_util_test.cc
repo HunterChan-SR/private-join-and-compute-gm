@@ -33,7 +33,7 @@ namespace private_join_and_compute::ec_key_util {
 namespace {
 using ::testing::Test;
 
-const int kTestCurveId = NID_X9_62_prime256v1;
+const int kTestCurveId = /*NID_X9_62_prime256v1*/NID_sm2p256v1;
 
 TEST(EcKeyUtilTest, GenerateKey) {
   std::filesystem::path temp_dir(::testing::TempDir());

@@ -29,7 +29,7 @@ bazel_dep(name = "rules_python", version = "0.36.0")
 git_override(
     module_name = "boringssl",
     remote = "https://github.com/HunterChan-SR/BoringSSL-GM",
-    commit = "fff65d707be7383e252a11f8e41a8641c3bc0671",
+    commit = "d54b03965c46ecc2aff97aa281e0b4d2d5d530f4",
 )
 
 

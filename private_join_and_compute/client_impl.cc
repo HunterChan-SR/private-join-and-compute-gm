@@ -41,7 +41,7 @@ PrivateIntersectionSumProtocolClientImpl::
       intersection_sum_(ctx->Zero()),
       ec_cipher_(std::move(
           ECCommutativeCipher::CreateWithNewKey(
-              NID_X9_62_prime256v1,ECCommutativeCipher::HashType::SM3 /*ECCommutativeCipher::HashType::SHA256*/)
+              /*NID_X9_62_prime256v1*/NID_sm2p256v1,ECCommutativeCipher::HashType::SM3 /*ECCommutativeCipher::HashType::SHA256*/)
               .value())) {}
 
 StatusOr<PrivateIntersectionSumClientMessage::ClientRoundOne>

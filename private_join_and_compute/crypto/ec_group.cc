@@ -226,7 +226,7 @@ StatusOr<ECPoint> ECGroup::GetPointByHashingToCurveSswuRo(
             reinterpret_cast<const uint8_t*>(m.data()), m.length()) != 1) {
       return InternalError(OpenSSLErrorString());
     }
-  } else if(curve_id == NID_sm2p256v1){
+  } else if(curve_id == NID_sm2){
     if (EC_hash_to_curve_sm2p256v1_xmd_sm3_sswu(
             group_.get(), out.point_.get(),
             reinterpret_cast<const uint8_t*>(dst.data()), dst.length(),

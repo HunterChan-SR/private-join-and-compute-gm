@@ -41,7 +41,7 @@ using ::testing::HasSubstr;
 using testing::IsOkAndHolds;
 using testing::StatusIs;
 
-const int kTestCurveId = /*NID_X9_62_prime256v1*/NID_sm2p256v1;
+const int kTestCurveId = /*NID_X9_62_prime256v1*/NID_sm2;
 const int kSafePrimeLengthBits = 600;
 const int kSecurityParameter = 128;
 const int kChallengeLengthBits = 128;
